@@ -1,0 +1,4 @@
+<div{{ attributes }}>
+    <input type="text" data-model="on(change)|prompt" data-loading="addAttribute(disabled)" />
+    <div id="response" {{ turbo_stream_listen('game') }}></div>
+</div>

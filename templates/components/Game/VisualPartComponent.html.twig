@@ -1,0 +1,11 @@
+<div{{ attributes }}>
+    <button {{ stimulus_action(
+        'live',
+        'action',
+        'click',
+        {'action' : 'generate'}
+    ) }} class="btn btn-primary position-absolute top-0 end-0">
+        test
+    </button>
+    <div id="visual-response" {{ turbo_stream_listen('visual') }}></div>
+</div>
